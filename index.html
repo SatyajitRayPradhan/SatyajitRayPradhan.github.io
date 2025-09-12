@@ -14,8 +14,8 @@
     <!--    Google font CSS: fonts.css-->
     <link href="/fonts.css" rel="stylesheet">
     <!--    Favicon-->
-    <link rel="icon" type="image/png" href="/src/Profile.png">
-    <link rel="apple-touch-icon" href="/src/Profile.png">
+    <link href="/src/Profile.jpg" rel="icon" type="image/jpeg">
+    <link href="/src/Profile.jpg" rel="apple-touch-icon">
 </head>
 <body class="bg-white">
 <!--Webpage Header: Contains the name and navigation links.-->
@@ -51,42 +51,61 @@
         </nav>
     </div>
 </header>
+<!--Webpage Body: Contains the main content of the webpage.-->
 <main class="pt-16">
+    <!--    Home section: Contains the photo and name of the user.-->
     <section class="py-16" id="home">
         <div class="container mx-auto px-6">
             <div class="bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row items-center md:space-x-12">
                 <div class="w-full md:w-1/3 mb-6 md:mb-0 flex justify-center">
-                    <img alt="Error loading image" class="rounded-full shadow-lg h-48 w-48 object-cover"
-                         src="/src/Profile.png">
+                    <!--                    Portfolio Image-->
+                    <img alt="Error loading image" class="rounded-3xl shadow-lg h-48 w-48 object-cover"
+                         src="/src/Profile.jpg">
                 </div>
                 <div class="w-full md:w-2/3 text-center md:text-left">
-                    <div class="relative">
+                    <!--                    Name-->
+                    <div class="relative mb-4">
                         <h2 class="absolute michroma-regular text-4xl sm:text-5xl text-fuchsia-900 font-bold transition-opacity duration-300 hover:opacity-0">
                             Satyajit Ray Pradhan</h2>
                         <h2 class="michroma-regular text-4xl sm:text-5xl font-bold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent transition-opacity duration-300 opacity-0 hover:opacity-100">
                             Satyajit Ray Pradhan</h2>
                     </div>
-                    <p class="text-lg sm:text-xl text-gray-700 italic">"Knowledge is power. And with great power comes
+                    <p class="text-lg text-gray-700 italic">"Knowledge is power. And with great power comes
                         great responsibility."</p>
                 </div>
             </div>
         </div>
     </section>
+    <!--    About section: Contains the introduction and personal details of the user.-->
     <section class="bg-gray-100 py-16" id="about">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center md:space-x-12">
                 <div class="w-full md:w-1/3 mb-8 md:mb-0"></div>
                 <div class="w-full md:w-2/3">
                     <h2 class="text-3xl font-bold mb-4">About Me</h2>
-                    <!--                    <p class="text-lg text-gray-700 leading-relaxed">-->
-                    <!--                        This is where you would write a concise and engaging bio about yourself.-->
-                    <!--                        Mention your background, passions, and what you're currently working on.-->
-                    <!--                        Highlight your personality and professional goals.-->
-                    <!--                    </p>-->
+                    <p class="text-lg text-gray-700 leading-relaxed text-justify">
+                        Hello Viewer! A heartfelt welcome to my portfolio webpage.<br>
+                        I'm Satyajit Ray Pradhan, a prospective student from India with a strong academic foundation,
+                        holding an M.Sc. and MPhil in Computer Science from Sambalpur University. My professional and
+                        personal life are driven by a singular passion: applying cutting-edge technology to solve
+                        complex problems, particularly in the intersection of data and biology.<br>
+                        While I began a doctoral program, I made a conscious choice to step away. This decision was a
+                        strategic pivot, allowing me to gain a deeper, more practical understanding of the fields I was
+                        most passionate about. It's an approach that values hands-on mastery over a rigid academic
+                        track, which has allowed me to solidify my expertise in Bioinformatics and Data Science through
+                        dedicated self-study.<br>
+                        Today, my strong foundation in computer science is complemented by a solid understanding of
+                        general biology, acquired from my early preparation for the NEET exam. This background has given
+                        me the unique perspective needed to bridge the gap between computational methods and biological
+                        data. I approach every challenge with the strategic mindset of a chess player, analyzing complex
+                        systems and identifying optimal paths to a solution. I am now seeking a doctoral program where I
+                        can apply my combined knowledge to make a meaningful contribution to the academic community.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+    <!--    Educational Qualifications-->
     <section class="py-16" id="education">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center md:space-x-12">
@@ -111,6 +130,7 @@
             </div>
         </div>
     </section>
+    <!--    Awards and Honors-->
     <section class="bg-gray-100 py-16" id="awards">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center md:space-x-12">
@@ -137,6 +157,7 @@
             </div>
         </div>
     </section>
+    <!--    Skilled in:-->
     <section class="py-16" id="skills">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center md:space-x-12">
@@ -145,6 +166,7 @@
                     <h2 class="text-3xl font-bold mb-4">Skills</h2>
                 </div>
             </div>
+            <!--            Languages, Frameworks, and Design systems:-->
             <h4 class="text-lg font-bold mb-2">Languages, Frameworks, and Design systems:</h4>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-4">
                 <div class="bg-white p-4 text-center rounded-lg shadow-md">
@@ -188,6 +210,7 @@
                     <p class="text-lg font-semibold text-orange-600">SQL</p>
                 </div>
             </div>
+            <!--            IDEs and Software Applications:-->
             <h4 class="text-lg font-bold mb-2">IDEs and Software Applications:</h4>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-4">
                 <div class="bg-white p-4 text-center rounded-lg shadow-md">
@@ -248,31 +271,36 @@
                     <p class="text-sm text-gray-600">*Actively using</p>
                 </div>
             </div>
+            <!--            Other Skills:-->
             <h4 class="text-base font-semibold mt-8 mb-2">*Currently learning Data Science and Bioinformatics on
                 Coursera.</h4>
         </div>
     </section>
+    <!--    Contact Section: Contains the contact section of the webpage.-->
     <section class="bg-gray-900 text-white py-6" id="contact">
         <div class="container mx-auto px-6">
             <h2 class="text-lg font-bold mb-1">Quick Links</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex flex-col items-start">
+                    <!--                    GitHub Profile:-->
                     <a class="inline-block mb-2 transition-opacity duration-300 hover:opacity-75"
                        href="https://github.com/SatyajitRayPradhan"
                        rel="noopener noreferrer" target="_blank">
                         <img alt="GitHub Profile" class="h-6 w-6 mb-2" src="/src/Github.png">
                     </a>
+                    <!--                    LinkedIn Profile:-->
                     <a class="inline-block mb-2 transition-opacity duration-300 hover:opacity-75"
                        href="https://www.linkedin.com/in/satyajit-ray-pradhan-802b72373"
                        rel="noopener noreferrer" target="_blank">
                         <img alt="LinkedIn Profile" class="h-6 w-6 mb-2" src="/src/Linkedin.png">
                     </a>
                 </div>
-<!--                Add a new div and inside it add a list of quick links.-->
+                <!--                Add a new div and inside it add a list of quick links.-->
             </div>
         </div>
     </section>
 </main>
+<!--Webpage Footer: Contains the footer section of the webpage.-->
 <footer class="bg-gray-900 py-6">
     <div class="container mx-auto px-6 text-center text-white text-sm">
         <p>This website was developed as a **learning on the go project** and was assisted by **Gemini AI** in
