@@ -8,7 +8,7 @@
     <!--    Google font: Lavishly Yours-->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Michroma&display=swap" rel="stylesheet">
     <!--    Tailwind CSS: style.css-->
     <link href="/style.css" rel="stylesheet">
     <!--    Google font CSS: fonts.css-->
@@ -16,10 +16,14 @@
 </head>
 <body class="bg-white">
 <!--Webpage Header: Contains the name and navigation links.-->
-<header class="text-blue-900 p-4 shadow-md">
+<header class="fixed top-0 w-full z-50 bg-white text-blue-900 p-4 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
-        <h1 class="lavishly-yours-regular text-4xl font-bold hover:bg-gradient-to-r hover:from-blue-900 hover:to-fuchsia-900 hover:bg-clip-text hover:text-transparent transition-all duration-300 ease-in-out">
-            Satyajit Ray Pradhan</h1>
+        <div class="relative">
+            <h1 class="absolute lavishly-yours-regular text-4xl font-bold transition-opacity duration-300 hover:opacity-0">
+                Satyajit Ray Pradhan</h1>
+            <h1 class="lavishly-yours-regular text-4xl font-bold bg-gradient-to-r from-green-500 to-fuchsia-500 bg-clip-text text-transparent transition-opacity duration-300 opacity-0 hover:opacity-100">
+                Satyajit Ray Pradhan</h1>
+        </div>
         <nav>
             <ul class="flex space-x-4">
                 <li><a class="hover:underline hover:text-fuchsia-900 transition-all duration-300 ease-in-out"
@@ -44,7 +48,7 @@
         </nav>
     </div>
 </header>
-<main>
+<main class="pt-16">
     <section class="py-16" id="home">
         <div class="container mx-auto px-6">
             <div class="bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row items-center md:space-x-12">
@@ -53,19 +57,224 @@
                          src="/src/Profile.jpg">
                 </div>
                 <div class="w-full md:w-2/3 text-center md:text-left">
-                    <h2 class="text-4xl sm:text-5xl text-fuchsia-900 font-bold lavishly-yours-regular mb-2">Satyajit Ray
-                        Pradhan</h2>
+                    <div class="relative">
+                        <h2 class="absolute michroma-regular text-4xl sm:text-5xl text-fuchsia-900 font-bold transition-opacity duration-300 hover:opacity-0">
+                            Satyajit Ray Pradhan</h2>
+                        <h2 class="michroma-regular text-4xl sm:text-5xl font-bold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent transition-opacity duration-300 opacity-0 hover:opacity-100">
+                            Satyajit Ray Pradhan</h2>
+                    </div>
                     <p class="text-lg sm:text-xl text-gray-700 italic">"Knowledge is power. And with great power comes
                         great responsibility."</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about"></section>
-    <section id="education"></section>
-    <section id="awards"></section>
-    <section id="skills"></section>
-    <section id="contact"></section>
+    <section class="bg-gray-100 py-16" id="about">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="w-full md:w-1/3 mb-8 md:mb-0"></div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                    <!--                    <p class="text-lg text-gray-700 leading-relaxed">-->
+                    <!--                        This is where you would write a concise and engaging bio about yourself.-->
+                    <!--                        Mention your background, passions, and what you're currently working on.-->
+                    <!--                        Highlight your personality and professional goals.-->
+                    <!--                    </p>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16" id="education">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="w-full md:w-1/3 mb-8 md:mb-0"></div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-4">Education</h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Ph.D. Computer Science (Dropped out)</h3>
+                    <p class="text-gray-600">Sambalpur University, 2022</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">M.Phil. Computer Science</h3>
+                    <p class="text-gray-600">Sambalpur University, 2020</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">M.Sc. Computer Science</h3>
+                    <p class="text-gray-600">Sambalpur University Institute of Information Technology (SUIIT), 2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-16" id="awards">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="w-full md:w-1/3 mb-8 md:mb-0"></div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-1">Awards</h2>
+                </div>
+            </div>
+            <h4 class="text-lg font-semibold mb-2">Academic:</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">National Fellowship for Other Backward Classes</h3>
+                    <h4 class="text-lg mb-2">December 2020 and June 2021 (merged) | June 2020</h4>
+                    <p class="text-gray-600">This fellowship is given by the Government of India (GOI) to those UGC-NET
+                        qualified students who belong to the Other Backward Classes (OBC) for a maximum period of 5
+                        years.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">UGC-NET</h3>
+                    <h4 class="text-lg mb-2">December 2020 and June 2021 (merged) | June 2020 | December 2019</h4>
+                    <p class="text-gray-600">This award enables one to be eligible for becoming an assistant
+                        professor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16" id="skills">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="w-full md:w-1/3 mb-8 md:mb-0"></div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-4">Skills</h2>
+                </div>
+            </div>
+            <h4 class="text-lg font-bold mb-2">Languages, Frameworks, and Design systems:</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-4">
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-amber-600">HTML5</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-blue-600">Tailwind CSS</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-emerald-600">JavaScript</p>
+                    <p class="text-sm text-gray-600">*Currently learning</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-cyan-600">C</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-fuchsia-600">C++</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-gray-600">Kotlin</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-green-600">Jetpack Compose</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-indigo-600">Material Design 3</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-lime-600">Python</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-neutral-600">MATLAB</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-orange-600">SQL</p>
+                </div>
+            </div>
+            <h4 class="text-lg font-bold mb-2">IDEs and Software Applications:</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-4">
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-pink-600">IntelliJ IDEA</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-purple-600">CLion</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-red-600">PyCharm</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-sky-600">WebStorm</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-rose-600">Android Studio</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-slate-600">Unreal Engine 5</p>
+                    <p class="text-sm text-gray-600">*Currently learning</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-teal-600">Adobe Photoshop</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-stone-600">Adobe Illustrator</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-violet-600">Adobe Premiere Pro</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-yellow-600">Adobe After Effects</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-zinc-600">Autodesk Revit</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-blue-900">Autodesk Inventor</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-emerald-900">Autodesk Maya</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-fuchsia-900">Blender</p>
+                    <p class="text-sm text-gray-600">*Currently learning</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-green-900">Visual Studio</p>
+                    <p class="text-sm text-gray-600">*Currently learning</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-indigo-900">Oracle Database 19c</p>
+                </div>
+                <div class="bg-white p-4 text-center rounded-lg shadow-md">
+                    <p class="text-lg font-semibold text-orange-900">Microsoft Office</p>
+                    <p class="text-sm text-gray-600">*Actively using</p>
+                </div>
+            </div>
+            <h4 class="text-base font-semibold mt-8 mb-2">*Currently learning Data Science and Bioinformatics on
+                Coursera.</h4>
+        </div>
+    </section>
+    <section class="bg-gray-900 text-white py-6" id="contact">
+        <div class="container mx-auto px-6">
+            <h2 class="text-lg font-bold mb-1">Quick Links</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col items-start">
+                    <a class="inline-block mb-2 transition-opacity duration-300 hover:opacity-75"
+                       href="https://github.com/SatyajitRayPradhan"
+                       rel="noopener noreferrer" target="_blank">
+                        <img alt="GitHub Profile" class="h-6 w-6 mb-2" src="/src/Github.png">
+                    </a>
+                    <a class="inline-block mb-2 transition-opacity duration-300 hover:opacity-75"
+                       href="https://www.linkedin.com/in/satyajit-ray-pradhan-802b72373"
+                       rel="noopener noreferrer" target="_blank">
+                        <img alt="LinkedIn Profile" class="h-6 w-6 mb-2" src="/src/Linkedin.png">
+                    </a>
+                </div>
+<!--                Add a new div and inside it add a list of quick links.-->
+            </div>
+        </div>
+    </section>
 </main>
+<footer class="bg-gray-900 py-6">
+    <div class="container mx-auto px-6 text-center text-white text-sm">
+        <p>This website was developed as a **learning on the go project** and was assisted by **Gemini AI** in
+            suggesting Tailwind CSS classes.</p>
+    </div>
+</footer>
 </body>
 </html>
